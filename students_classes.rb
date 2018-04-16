@@ -1,8 +1,10 @@
 class Student
 
-  def initialize(name, cohort)
+  def initialize(name, cohort, message, favourite)
     @name = name
     @cohort = cohort
+    @message = message
+    @tv_programme = favourite
   end
 
   def get_name()
@@ -19,6 +21,14 @@ class Student
 
   def set_cohort(new_cohort)
     return @cohort = new_cohort
+  end
+
+  def get_message
+    return @message
+  end
+
+  def get_favourite
+    return @tv_programme
   end
 
 
